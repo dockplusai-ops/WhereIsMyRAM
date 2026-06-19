@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:status-bar}",
+            "name": "Debug StatusBar",
+            "target": "StatusBar",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug StatusBar"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:status-bar}",
+            "name": "Release StatusBar",
+            "target": "StatusBar",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release StatusBar"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:status-bar}",
+            "name": "Debug WhereIsMyRAM",
+            "target": "WhereIsMyRAM",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug WhereIsMyRAM"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:status-bar}",
+            "name": "Release WhereIsMyRAM",
+            "target": "WhereIsMyRAM",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release WhereIsMyRAM"
+        }
+    ]
+}
