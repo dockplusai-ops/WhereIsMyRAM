@@ -1,7 +1,7 @@
 APP = WhereIsMyRAM
 DIST = dist/$(APP).app
 
-.PHONY: all build run icon app install uninstall release clean
+.PHONY: all build run icon app install uninstall release publish clean
 
 all: app
 
@@ -33,6 +33,10 @@ install: app
 ## release: assina (Developer ID), empacota DMG, notariza e staple
 release:
 	./release.sh
+
+## publish: release + commit + push + GitHub Release (usa VERSION de build_app.sh)
+publish:
+	./publish.sh
 
 ## uninstall: remove de /Applications e mata o processo
 uninstall:
